@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Exemplo1</a></li>
+                <li><a href="Exemplo2.html">Exemplo2</a></li>
+                <li><a href="Exemplo3.html">Exemplo3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <form action="" method="POST">
+        <br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="text" type="password" name="senha" size="8" maxlength="8">
+        <br><br>
+
+        <fieldset>
+            <label for="linguagem">Linguagem que tem interesse</label>
+            <br><br>
+            <input type="checkbox" name="linguagem[]" value="c++">C++
+            <input type="checkbox" name="linguagem[]" value="php">php
+            <input type="checkbox" name="linguagem[]" value="delphi">Delphi
+        </fieldset>
+
+        <label for="linguagemescolhida">Linguagem que irá cursar agora</label>
+        <br><br>
+
+        <input type="radio" name="curso" value="c++">C++
+        <input type="radio" name="curso" value="php">php
+        <input type="radio" name="curso" value="Delphi">Delphi
+        <br><br>
+        <select name="escola">
+            <option value="c++">C++</option>
+            <option value="php">php</option>
+            <option value="delphi">Delphi</option>
+        </select>
+
+        <input name="submit" type="submit" id="submit" value="Enviar">
+    </form>
+</body>
+</html>
